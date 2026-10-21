@@ -1,0 +1,10 @@
+{
+  "name": "oneulmaju",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/backend.test.mjs tests/auth-ui.test.mjs tests/profile-ui.test.mjs tests/commerce.test.mjs tests/commerce-ui.test.mjs tests/applications.test.mjs tests/admin-ui.test.mjs tests/admin-files.test.mjs tests/application-ui.test.mjs tests/memos.test.mjs tests/memo-ui.test.mjs tests/admin-memos.test.mjs tests/admin-sessions.test.mjs"
+  }
+}

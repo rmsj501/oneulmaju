@@ -1,0 +1,63 @@
+/* Compact participant detail within the shared phone frame. */
+#admin-detail{padding:12px;margin:16px 0;border-radius:12px}
+#admin-detail .admin-detail-heading{align-items:center;gap:8px;margin-bottom:8px}
+#admin-detail .admin-detail-heading h2{font-size:17px;line-height:1.4}
+#admin-detail h3{font-size:16px;line-height:1.5;font-weight:500;margin:12px 0 8px}
+#admin-detail p{font-size:13px;line-height:1.6;margin:6px 0}
+#admin-detail p:empty{margin:0;padding:0}
+#admin-detail .button,#admin-detail .text-button{min-height:44px;font:inherit;font-size:13px;line-height:1.45;padding:8px 10px}
+#admin-detail .text-button{border:0;background:transparent;color:var(--purple-text);cursor:pointer;margin:0}
+#admin-detail .admin-delete-button{color:var(--pink-text)}
+#admin-detail .admin-detail-heading button{padding-inline:6px}
+
+#admin-detail-profile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 12px;font-size:13px;line-height:1.6}
+#admin-detail-profile>p{margin:0;min-width:0;overflow-wrap:anywhere}
+#admin-detail-profile>p:nth-child(-n+2),#admin-detail-profile>.empty-state{grid-column:1 / -1}
+#admin-detail-profile>.empty-state{padding:10px}
+#admin-detail-files{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0 12px}
+#admin-detail-files:empty{margin:0 0 12px}
+#admin-detail-files button{min-width:0;min-height:44px;font-size:12px;line-height:1.45;padding:6px;border-radius:7px;overflow-wrap:anywhere}
+
+#admin-detail .field{margin-bottom:12px}
+#admin-detail .field label{font-size:13px;line-height:1.5;margin-bottom:5px}
+#admin-detail .field input,#admin-detail .field select{min-height:44px;padding:8px 10px}
+#admin-detail textarea{padding:8px 10px;line-height:1.5;border-radius:8px}
+#admin-detail textarea[readonly]{font-size:13px;line-height:1.6}
+#admin-detail .application-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 8px;margin:12px 0}
+#admin-detail .application-actions>*{min-width:0;margin:0;overflow-wrap:anywhere}
+#admin-detail .application-actions #admin-delete{grid-column:1 / -1;justify-self:end}
+#admin-detail-status{padding:8px 10px}
+
+#admin-notice{padding-top:10px;border-top:1px solid var(--line);margin-top:12px}
+#admin-detail .admin-notice-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:6px}
+#admin-detail .admin-notice-confirm{padding:10px;margin-top:8px;border-radius:8px}
+#admin-detail .admin-notice-confirm p{margin:0 0 6px;font-size:12px}
+#admin-detail .admin-notice-confirm>.button{margin-top:4px}
+#admin-detail #admin-notice-status{font-size:12px;line-height:1.6;margin:6px 0}
+
+#admin-detail .admin-memo-section{padding:12px 0;margin:14px 0 0}
+#admin-detail .admin-memo-section h3{margin:0 0 8px}
+#admin-detail .admin-memo-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#admin-detail #admin-memo-expand{grid-column:1 / -1}
+#admin-detail #admin-memo-view{margin:0}
+#admin-detail .admin-memo-section .field-pair{gap:8px;margin-top:10px}
+#admin-detail .admin-memo-limit{padding:10px;margin:8px 0 10px;border-radius:8px}
+#admin-detail .admin-memo-limit p{font-size:12px;margin:4px 0}
+#admin-detail .admin-memo-reader{padding:10px;margin-top:10px;border-radius:8px}
+#admin-detail .admin-memo-reader-heading{gap:8px}
+#admin-detail .admin-memo-reader-heading h4{font-size:15px}
+#admin-detail .admin-memo-card{padding:10px;margin:8px 0;border-radius:8px}
+#admin-detail .admin-memo-card p{margin-top:6px}
+#admin-detail .admin-memo-card time{margin-top:6px}
+#admin-detail #admin-memo-match-summary{padding:8px;margin:6px 0;border-radius:6px;font-size:12px}
+#admin-detail #admin-memo-match-summary:empty{padding:0;margin:0}
+#admin-detail #admin-memo-result{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#admin-detail #admin-memo-caption,#admin-detail #admin-memo-image,#admin-detail #admin-memo-copy{grid-column:1 / -1}
+#admin-detail #admin-memo-image{justify-self:center;margin:10px auto;width:280px;height:auto}
+#admin-detail #admin-memo-result a{margin:0}
+#admin-detail #admin-back-list{margin-top:12px}
+
+@media(max-width:360px){
+  #admin-detail-files{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #admin-detail-files>button:last-child:nth-child(odd){grid-column:1 / -1}
+}
